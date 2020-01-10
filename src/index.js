@@ -21,3 +21,6 @@ app.listen(app.get('port'), () =>{
     console.log('Server on port', app.get('port'));
     
 })
+
+//Static files
+app.use(express.static(path.join(__dirname,'public')))
